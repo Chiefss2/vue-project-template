@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue-projects
 
 ## Project setup
@@ -32,3 +33,7 @@ npm run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue-project-template
+project with all installation items
+>>>>>>> 02f99453e4e46b785dfe16e388798b4847494e59
