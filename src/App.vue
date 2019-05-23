@@ -1,9 +1,15 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/dashboard/analysis">dashboard</router-link> |
+      <router-link to="/form">form</router-link>
+    </div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style lang="scss"></style>
+<style lang="less"></style>
