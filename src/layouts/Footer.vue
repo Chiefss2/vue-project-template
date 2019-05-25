@@ -1,5 +1,5 @@
 <template>
-  <div>footer</div>
+  <div>Ant Design Vue Pro ©2019 Created by GeekTime-Chiefs</div>
 </template>
 
 <script>

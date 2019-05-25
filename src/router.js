@@ -12,6 +12,9 @@ const router = new Router({
   routes: [
     {
       path: "/user",
+      // 提供标志位，渲染菜单时有此标志位的忽略
+      // 约定一个规则，有name属性的才渲染
+      hideInMenu: true,
       component: () =>
         import(/* webpackChunkName: "layout" */ "./layouts/UserLayout"),
       children: [
@@ -113,13 +116,16 @@ const router = new Router({
     {
       path: "*",
       name: "404",
+      hideInMenu: true,
       component: NotFound
     }
   ]
 });
 
 router.beforeEach((to, from, next) => {
-  NProgress.start();
+  if (to.path !== from.path) {
+    NProgress.start();
+  }
   next();
 });
 

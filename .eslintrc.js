@@ -5,8 +5,8 @@ module.exports = {
   },
   // extends: ["plugin:vue/essential", "@vue/prettier"],
   extends: [
-    'plugin:vue/strongly-recommended',
-    'eslint:recommended',
+    'plugin:vue/essential',
+    // 'eslint:recommended',
     '@vue/prettier'
   ],
   rules: {
