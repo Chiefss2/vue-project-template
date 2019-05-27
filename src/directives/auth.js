@@ -1,6 +1,6 @@
 import { check } from "../utils/auth";
 
-// 权限指令弊端：只有第一次渲染时才会控制，无法解决动态权限改变的问题
+// 权限指令弊端：只有第一次渲染时才会控制，无法解决权限会动态改变的问题
 // 权限组件唯一缺点：就是写法复杂点 e.g.
 // <Authorized :authority="['admin']">
 //   <SettingDrawer />

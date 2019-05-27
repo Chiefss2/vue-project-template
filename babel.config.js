@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ["@vue/app"],
+  presets: ["@vue/app", "@vue/babel-preset-jsx"],
   plugins: [
     [
       // `style: true` 会加载 less 文件

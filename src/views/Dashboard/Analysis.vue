@@ -8,10 +8,12 @@
 </template>
 
 <script>
-// import axios from "axios";
 import request from "../../utils/request";
 import Chart from "../../components/Chart";
 export default {
+  components: {
+    Chart
+  },
   data() {
     return {
       chartOption: {}
@@ -24,6 +26,9 @@ export default {
     //   // 避免了使用深度监听带来的性能耗费的缺点
     //   this.chartOption = { ...this.chartOption };
     // }, 3000);
+  },
+  beforeDestroy() {
+    clearInterval(this.interval);
   },
   methods: {
     getChartData() {
@@ -51,12 +56,6 @@ export default {
         };
       });
     }
-  },
-  beforeDestroy() {
-    clearInterval(this.interval);
-  },
-  components: {
-    Chart
   }
 };
 </script>

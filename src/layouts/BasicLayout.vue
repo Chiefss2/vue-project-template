@@ -6,10 +6,10 @@
     >
       <a-layout-sider
         v-if="navLayout === 'left'"
+        v-model="collapsed"
         :theme="navTheme"
         :trigger="null"
         collapsible
-        v-model="collapsed"
         width="256px"
       >
         <div class="logo">Ant Design Vue Pro</div>
@@ -45,6 +45,12 @@ import SiderMenu from "./SiderMenu";
 import Footer from "./Footer";
 import SettingDrawer from "../components/SettingDrawer";
 export default {
+  components: {
+    Header,
+    SiderMenu,
+    Footer,
+    SettingDrawer
+  },
   data() {
     return {
       collapsed: false
@@ -57,12 +63,6 @@ export default {
     navLayout() {
       return this.$route.query.navLayout || "left";
     }
-  },
-  components: {
-    Header,
-    SiderMenu,
-    Footer,
-    SettingDrawer
   }
 };
 </script>
