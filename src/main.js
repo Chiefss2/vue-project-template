@@ -3,7 +3,16 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store/store";
 import "./registerServiceWorker";
-import { Button, Layout, Icon, Drawer, Radio, Menu } from "ant-design-vue";
+import {
+  Button,
+  Layout,
+  Icon,
+  Drawer,
+  Radio,
+  Menu,
+  Form,
+  Input
+} from "ant-design-vue";
 // 使用权限组件控制权限
 import Authorized from "./components/Authorized";
 // 使用自定义权限指令控制权限
@@ -16,6 +25,8 @@ Vue.use(Icon);
 Vue.use(Drawer);
 Vue.use(Radio);
 Vue.use(Menu);
+Vue.use(Form);
+Vue.use(Input);
 Vue.component("Authorized", Authorized); // 注册全局组件
 Vue.use(Auth); // 注册全局指令
 
