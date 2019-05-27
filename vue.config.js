@@ -15,7 +15,9 @@ module.exports = {
           if (req.headers.accept.indexOf("html") !== -1) {
             console.log("Skipping proxy for browser request.");
             return "/index.html";
-          } else {
+          } else if (process.env.MOCK !== "none") {
+            // process是nodejs一个全局对象
+            // process.env属性返回包含用户环境的对象
             const name = req.path
               .split("/api/")[1]
               .split("/")
