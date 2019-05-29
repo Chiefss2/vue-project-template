@@ -1,9 +1,6 @@
 <template>
   <div>
-    <Chart
-      :option="chartOption"
-      style="height: 400px"
-    />
+    <Chart :option="chartOption" style="height: 400px" />
   </div>
 </template>
 

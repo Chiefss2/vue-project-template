@@ -1,9 +1,6 @@
 <template>
   <div>
-    <a-form
-      layout="horizontal"
-      :form="form"
-    >
+    <a-form layout="horizontal" :form="form">
       <a-form-item
         label="付款账户"
         :label-col="formItemLayout.labelCol"
@@ -28,14 +25,8 @@
         />
       </a-form-item>
       <a-form-item>
-        <a-button
-          type="primary"
-          @click="handleSubmit"
-        >提交</a-button>
-        <a-button
-          @click="onPrev"
-          style="margin-left: 10px"
-        >上一步</a-button>
+        <a-button type="primary" @click="handleSubmit">提交</a-button>
+        <a-button style="margin-left: 10px" @click="onPrev">上一步</a-button>
       </a-form-item>
     </a-form>
   </div>

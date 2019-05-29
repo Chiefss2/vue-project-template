@@ -11,7 +11,8 @@ import {
   Radio,
   Menu,
   Form,
-  Input
+  Input,
+  Select
 } from "ant-design-vue";
 // 使用权限组件控制权限
 import Authorized from "./components/Authorized";
@@ -27,6 +28,7 @@ Vue.use(Radio);
 Vue.use(Menu);
 Vue.use(Form);
 Vue.use(Input);
+Vue.use(Select);
 Vue.component("Authorized", Authorized); // 注册全局组件
 Vue.use(Auth); // 注册全局指令
 
