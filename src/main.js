@@ -32,6 +32,11 @@ Vue.use(Select);
 Vue.component("Authorized", Authorized); // 注册全局组件
 Vue.use(Auth); // 注册全局指令
 
+const IconFont = Icon.createFromIconfontCN({
+  scriptUrl: "//at.alicdn.com/t/font_1217893_xl99glfbmy.js"
+});
+Vue.component("IconFont", IconFont);
+
 new Vue({
   router,
   store,
