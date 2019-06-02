@@ -7,7 +7,7 @@
     "serve:no-mock": "cross-env MOCK=none vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
